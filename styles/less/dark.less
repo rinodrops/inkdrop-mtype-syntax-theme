@@ -1,0 +1,261 @@
+// Syntax for Dark UI
+body[class*="dark-ui"] {
+  .editor {
+    // CodeMirror overall settings
+
+    // Color of main window
+    .CodeMirror {
+      background-color: @ygray-02;
+      color: @ygray-10;
+    }
+
+    // Color of otherwise un-styled text
+    .CodeMirror-scroll {
+      color: @ygray-10;
+    }
+
+    // Gutter to the left
+    .CodeMirror-gutters {
+      background-color: @gray-01;
+      border-right: 1px solid @gray-05;
+    }
+
+    // Line numbers in the gutter
+    .CodeMirror-linenumber {
+      color: @gray-05;
+    }
+
+    // Highlighted text
+    .CodeMirror-selected {
+      background-color: @gray-05;
+    }
+
+    // Highlighted text with focus
+    .CodeMirror-focused .CodeMirror-selected {
+      background-color: @orange-07;
+    }
+
+    .CodeMirror-cursor {
+      // The cursor
+      border-left: 1px solid @red-10;
+    }
+
+    .CodeMirror-matchingbracket,
+    .CodeMirror-matchingtag {
+      // When you click a tag/bracket and the matching one is highlighted
+      background-color: @yellow-12 !important;
+      color: @black !important;
+      border: 1px solid @gray-alpha-lighter;
+      margin-left: -1px;
+      margin-right: -1px;
+      padding: 2px 0px;
+    }
+
+    .CodeMirror-foldgutter-open:after {
+      // Those little arrows in the gutter
+      color: @gray-08;
+    }
+
+    .CodeMirror-foldgutter-folded:after {
+      // The arrows after you collapse code
+      color: @gray-08;
+    }
+
+    .CodeMirror.over-gutter,
+    .CodeMirror-activeline {
+      .CodeMirror-foldgutter-open:after {
+        // Arrows when hovering on the gutter
+        color: @gray-02;
+      }
+    }
+
+    .CodeMirror-foldmarker {
+      // The [...] marking collapsed code
+      border-color: @gray-08;
+      background-color: @gray-08;
+      color: @gray-07;
+    }
+
+    .CodeMirror .CodeMirror-linewidget img.inline-widget {
+      background: @gray-09;
+    }
+
+    .CodeMirror-searching, .cm-searching {
+      // Ctrl + F results
+      background-color: @yellow-12;
+      color: @black;
+
+      // Selected result
+      &.searching-current-match {
+        background-color: @red-10 !important;
+      }
+    }
+
+    /* All 'dem swatches */
+
+    .CodeMirror {
+      .cm-formatting-list.cm-variable-2 {
+        color: @green-12;
+      }
+
+      .cm-formatting-list.cm-variable-3 {
+        color: @azure-12;
+      }
+
+      .cm-hr {
+        color: @gray-06;
+      }
+
+      .cm-header {
+        color: @ygray-10;
+      }
+      .cm-formatting-header-1,
+      .cm-formatting-header-2,
+      .cm-formatting-header-3,
+      .cm-formatting-header-4,
+      .cm-formatting-header-5,
+      .cm-formatting-header-6 {
+        opacity: 0.3;
+        color: @gray-08;
+        font-family: none;
+        font-size: 1rem !important;
+        display: inline-block;
+        text-align: right;
+        width: 2.5rem;
+      }
+      .cm-formatting-header-5,
+      .cm-formatting-header-6 {
+        font-size: 0.8rem !important;
+        letter-spacing: -0.1rem;
+        width: 2.5rem;
+      }
+
+      .cm-link {
+        color: @green-12;
+        text-decoration: none;
+      }
+
+      .cm-rangeinfo {
+        color: @orange-12;
+      }
+
+      pre.quote {
+      text-indent: -1rem;
+      background-color: @gray-alpha-lighter;
+      border-radius: 6px;
+      }
+
+      .cm-quote {
+        color: @gray-10;
+      }
+
+      .cm-whitespace::before {
+        color: @gray-09;
+        opacity: 0.4;
+      }
+
+      .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em {
+        opacity: 0.3;
+      }
+
+      .cm-strong {
+        color: @red-09;
+      }
+
+      .cm-em {
+        color: @orange-09;
+      }
+
+      .cm-strikethrough {
+        color: @gray-07;
+        text-decoration-color: @gray-06;
+      }
+
+      // carriage return
+      .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
+        color: @gray-09;
+        opacity: 0.4;
+      }
+
+      .cm-inline-code {
+        background: @gray-alpha-lighter;
+        color: @red-14;
+        border: 1px solid @gray-alpha-lighter;
+        border-radius: 3px;
+        padding: 2px 5px;
+
+        &.CodeMirror-matchingbracket {
+          // border: none;
+          padding: 2px 4px;
+          margin-left: -5px;
+          margin-right: -5px;
+        }
+
+        &.cm-formatting-code {
+          background: transparent;
+          color: @gray-08;
+          border: none;
+          padding: 0px;
+        }
+      }
+
+      .cm-table-sep, .table-row.table-row-1 {
+        color: @green-09;
+      }
+
+      // Code block
+      .gfm-codeblock {
+        background-color: @gray-alpha-lighter;
+        color: @white;
+
+        &.gfm-codeblock-begin {
+          color: @gray-06;
+        }
+
+        &.gfm-codeblock-end {
+          color: @gray-07;
+        }
+      }
+
+      .gfm-codeblock {
+        .cm-atom      { color: @violet-13; }
+        .cm-attribute { color: @green-13; }
+        .cm-builtin   { color: @azure-13; }
+        .cm-bracket   { opacity: 0.5; }
+        .cm-comment   { color: @gray-06; font-style: italic; }
+        .cm-def       { color: @teal-16; font-weight: @font-weight-bold; }
+        .cm-error     { color: @red-10; font-style: italic; }
+        .cm-header    { color: @azure-13; font-weight: @font-weight-regular; }
+        .cm-keyword   { color: @azure-13; }
+        .cm-meta      { color: @gray-08; }
+        .cm-minus     { color: @red-14; }
+        .cm-number    { color: @yellow-13; }
+        .cm-operator  { color: @indigo-18; }
+        .cm-plus      { color: @yellow-13;}
+        .cm-property  { color: @azure-13; }
+        .cm-qualifier { color: @green-13; }
+        .cm-quote     { display: inline; width: inherit; }
+        .cm-string    { color: @red-15; }
+        .cm-string-2  { color: @orange-13; }
+        .cm-tag       { color: @teal-12; }
+        .cm-variable,
+        .cm-variable-2,
+        .cm-variable-3,  { color: @violet-13; }
+
+        // JSON's key
+        .cm-property.cm-string {
+          color: @azure-13;
+        }
+      }
+
+      .cm-url {
+        color: @azure-12;
+      }
+    }
+
+    /* Active Line Highlight support */
+    .CodeMirror-activeline-background, .CodeMirror-activeline-gutter {
+      background-color: fade(@gray-03, 50%) !important;
+    }
+  }
+}

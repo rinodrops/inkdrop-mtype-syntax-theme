@@ -1,11 +1,14 @@
 {
   "version": "1.0.0",
-  "name": "default-light-syntax",
-  "description": "Default light syntax theme",
+  "name": "mtype-syntax",
+  "description": "Modern Type Syntax Theme",
   "theme": "syntax",
   "scripts": {
     "build": "lessc styles/less/default.less ./styles/index.css"
   },
+  "repository": "https://github.com/rinodrops/inkdrop-mtype-syntax-theme",
+  "author": "Rino <rino@emotiongraphics.jp>",
+  "license": "MIT",
   "styleSheets": [
     "index.css"
   ],
