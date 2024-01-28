@@ -1,152 +1,539 @@
+@import 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap';
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+:root {
+  --inkdrop-header-font: "Source Sans 3", "Noto Sans JP", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 .editor {
   /* All 'dem swatches */
   /* Active Line Highlight support */
 }
 .editor .CodeMirror {
-  background-color: #FFFFFF;
-  color: #434C5E;
+  background-color: #ffffff;
+  color: #191918;
 }
 .editor .CodeMirror-scroll {
-  color: #434C5E;
+  color: #191918;
+}
+.editor .CodeMirror-lines {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
 }
 .editor .CodeMirror-gutters {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .editor .CodeMirror-linenumber {
-  color: #4C566A;
-  opacity: 0.6;
+  color: #757573;
+  left: -1rem !important;
 }
 .editor .CodeMirror-selected {
-  background-color: #E5E9F0;
+  background-color: #d3d2cf;
 }
 .editor .CodeMirror-focused .CodeMirror-selected {
-  background-color: #D8DEE9;
+  background-color: #ff8c21;
 }
 .editor .CodeMirror-cursor {
-  border-left: 1px solid #2E3440;
+  border-left: 1px solid #e00917;
 }
 .editor .CodeMirror-matchingbracket,
 .editor .CodeMirror-matchingtag {
-  background: #4C566A !important;
-  border-bottom: 1px solid #88C0D0 !important;
+  background-color: #f6d82a !important;
+  color: #000000 !important;
+  border: 1px solid rgba(60, 45, 0, 0.05);
+  margin-left: -1px;
+  margin-right: -1px;
+  padding: 2px 0px;
 }
 .editor .CodeMirror-foldgutter-open:after {
-  color: #4C566A;
+  color: #bcbbb8;
 }
 .editor .CodeMirror-foldgutter-folded:after {
-  color: #4C566A;
+  color: #bcbbb8;
 }
 .editor .CodeMirror.over-gutter .CodeMirror-foldgutter-open:after,
 .editor .CodeMirror-activeline .CodeMirror-foldgutter-open:after {
-  color: #4C566A;
+  color: #bcbbb8;
 }
 .editor .CodeMirror-foldmarker {
-  border-color: #4C566A;
-  background-color: #4C566A;
-  color: #434C5E;
+  border-color: #bcbbb8;
+  background-color: #bcbbb8;
+  color: #a4a4a1;
 }
 .editor .CodeMirror .CodeMirror-linewidget img.inline-widget {
-  background: rgba(0, 0, 0, 0.05);
+  background: #d3d2cf;
 }
-.editor .CodeMirror-searching {
-  background-color: #EBCB8B;
+.editor .CodeMirror-searching,
+.editor .cm-searching {
+  background-color: #f6d82a;
+  padding: 4px 0px;
 }
-.editor .CodeMirror-searching.searching-current-match {
-  background-color: #D08770;
+.editor .CodeMirror-searching.searching-current-match,
+.editor .cm-searching.searching-current-match {
+  background-color: #e00917 !important;
 }
-.editor .CodeMirror .cm-atom,
-.editor .CodeMirror .cm-formatting-list.cm-variable-3 {
-  color: #D08770;
-}
-.editor .CodeMirror .cm-keyword,
 .editor .CodeMirror .cm-formatting-list.cm-variable-2 {
-  color: #5E81AC;
+  color: #518705;
+  font-weight: 700;
 }
-.editor .CodeMirror .cm-url,
-.editor .CodeMirror .cm-string,
-.editor .CodeMirror .cm-string-2,
+.editor .CodeMirror .cm-formatting-list.cm-variable-3 {
+  color: #055787;
+  font-weight: 700;
+}
 .editor .CodeMirror .cm-hr {
-  color: #81A1C1;
-}
-.editor .CodeMirror .cm-number,
-.editor .CodeMirror .cm-attribute,
-.editor .CodeMirror .cm-plus {
-  color: #5E81AC;
-}
-.editor .CodeMirror .cm-def,
-.editor .CodeMirror .cm-property {
-  color: #D08770;
-}
-.editor .CodeMirror .cm-variable {
-  color: #5E81AC;
-}
-.editor .CodeMirror .cm-operator,
-.editor .CodeMirror .cm-meta,
-.editor .CodeMirror .cm-bracket {
-  color: #A3BE8C;
-}
-.editor .CodeMirror .cm-comment {
-  color: #D8DEE9;
-  font-style: italic;
-}
-.editor .CodeMirror .cm-error,
-.editor .CodeMirror .cm-minus {
-  color: #BF616A;
-}
-.editor .CodeMirror .cm-formatting-header {
-  opacity: 0.3;
+  color: #bcbbb8;
 }
 .editor .CodeMirror .cm-header {
-  color: #5E81AC;
+  font-weight: 700;
+  font-family: var(--inkdrop-header-font);
+  display: inline;
+}
+.editor .CodeMirror .cm-header-1 {
+  font-size: 1.54rem !important;
+}
+.editor .CodeMirror .cm-header-2 {
+  font-size: 1.38rem !important;
+}
+.editor .CodeMirror .cm-header-3 {
+  font-size: 1.15rem !important;
+}
+.editor .CodeMirror .cm-header-4 {
+  font-size: 1rem !important;
+}
+.editor .CodeMirror .cm-header-5 {
+  font-size: 1rem !important;
+}
+.editor .CodeMirror .cm-header-6 {
+  font-size: 1rem !important;
+}
+.editor .CodeMirror .cm-formatting-header-1,
+.editor .CodeMirror .cm-formatting-header-2,
+.editor .CodeMirror .cm-formatting-header-3,
+.editor .CodeMirror .cm-formatting-header-4,
+.editor .CodeMirror .cm-formatting-header-5,
+.editor .CodeMirror .cm-formatting-header-6 {
+  opacity: 0.3;
+  color: #757573;
+  font-family: none;
+  font-size: 1rem !important;
+  display: inline-block;
+  text-align: right;
+  width: 2.5rem;
+}
+.editor .CodeMirror .cm-formatting-header-5,
+.editor .CodeMirror .cm-formatting-header-6 {
+  font-size: 0.8rem !important;
+  letter-spacing: -0.1rem;
+  width: 2.5rem;
 }
 .editor .CodeMirror .cm-link {
-  color: #A3BE8C;
-  text-underline-position: under;
+  color: #518705;
+  text-decoration: none;
 }
 .editor .CodeMirror .cm-rangeinfo {
-  color: #D08770;
+  color: #e57e1e;
 }
-.editor .CodeMirror .cm-qualifier,
-.editor .CodeMirror .cm-builtin,
-.editor .CodeMirror .cm-tag {
-  color: #88C0D0;
+.editor .CodeMirror pre.quote {
+  text-indent: -1rem;
+  background-color: rgba(60, 45, 0, 0.05);
+  border-radius: 6px;
 }
 .editor .CodeMirror .cm-quote {
-  color: #B48EAD;
+  color: #464645;
   font-style: italic;
 }
 .editor .CodeMirror .cm-whitespace::before {
-  color: #D8DEE9;
+  color: #d3d2cf;
   opacity: 0.4;
 }
 .editor .CodeMirror .cm-formatting-quote,
 .editor .CodeMirror .cm-formatting-strong,
 .editor .CodeMirror .cm-formatting-em {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .editor .CodeMirror .cm-strong {
-  color: #BF616A;
+  color: #ca0815;
 }
 .editor .CodeMirror .cm-em {
-  color: #D08770;
+  color: #e57e1e;
+}
+.editor .CodeMirror .cm-strikethrough {
+  color: #a4a4a1;
+  text-decoration-color: #8d8c8a;
 }
 .editor .CodeMirror .CodeMirror-code > div > pre > span::after,
 .editor .CodeMirror .CodeMirror-line > span::after {
-  color: #2E3440;
+  color: #d3d2cf;
   opacity: 0.4;
 }
 .editor .CodeMirror .cm-inline-code {
-  background: rgba(0, 0, 0, 0.02);
-  color: #4C566A;
+  background: rgba(60, 45, 0, 0.05);
+  color: #e00917;
+  border: 1px solid rgba(60, 45, 0, 0.05);
+  border-radius: 3px;
+  padding: 2px 5px;
 }
-.editor .CodeMirror .gfm-codeblock-bg.CodeMirror-linebackground {
-  background: rgba(0, 0, 0, 0.01);
+.editor .CodeMirror .cm-inline-code.CodeMirror-matchingbracket {
+  padding: 2px 4px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.editor .CodeMirror .cm-inline-code.CodeMirror-nonmatchingbracket {
+  padding: 2px 0px;
+}
+.editor .CodeMirror .cm-inline-code.cm-formatting-code {
+  background: transparent;
+  color: #bcbbb8;
+  border: none;
+  padding: 0;
 }
 .editor .CodeMirror .cm-table-sep,
 .editor .CodeMirror .table-row.table-row-1 {
-  color: #A3BE8C;
+  color: #8d8c8a;
+}
+.editor .CodeMirror .gfm-codeblock {
+  background-color: rgba(60, 45, 0, 0.05);
+  color: #000000;
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+.editor .CodeMirror .gfm-codeblock.gfm-codeblock-begin {
+  border-radius: 6px 6px 0px 0px;
+  padding: 0rem 1rem 0rem 1rem;
+  color: #757573;
+  font-size: 80%;
+}
+.editor .CodeMirror .gfm-codeblock.gfm-codeblock-end {
+  border-radius: 0px 0px 6px 6px;
+  padding: 0rem 1rem 0rem 1rem;
+  color: #757573;
+  font-size: 80%;
+}
+.editor .CodeMirror .gfm-codeblock .cm-atom {
+  color: #000000;
+}
+.editor .CodeMirror .gfm-codeblock .cm-attribute {
+  color: #6cb407;
+}
+.editor .CodeMirror .gfm-codeblock .cm-builtin {
+  color: #0774b4;
+}
+.editor .CodeMirror .gfm-codeblock .cm-bracket {
+  opacity: 0.5;
+}
+.editor .CodeMirror .gfm-codeblock .cm-comment {
+  color: #757573;
+  font-style: italic;
+}
+.editor .CodeMirror .gfm-codeblock .cm-def {
+  color: #000000;
+}
+.editor .CodeMirror .gfm-codeblock .cm-error {
+  color: #87050e;
+  font-style: italic;
+}
+.editor .CodeMirror .gfm-codeblock .cm-header {
+  color: #0774b4;
+  font-weight: 400;
+}
+.editor .CodeMirror .gfm-codeblock .cm-keyword {
+  color: #0774b4;
+}
+.editor .CodeMirror .gfm-codeblock .cm-meta {
+  color: #757573;
+}
+.editor .CodeMirror .gfm-codeblock .cm-minus {
+  color: #b40713;
+}
+.editor .CodeMirror .gfm-codeblock .cm-number {
+  color: #7254be;
+}
+.editor .CodeMirror .gfm-codeblock .cm-operator {
+  color: #202880;
+}
+.editor .CodeMirror .gfm-codeblock .cm-plus {
+  color: #b49a07;
+}
+.editor .CodeMirror .gfm-codeblock .cm-property {
+  color: #cc701b;
+}
+.editor .CodeMirror .gfm-codeblock .cm-qualifier {
+  color: #6cb407;
+}
+.editor .CodeMirror .gfm-codeblock .cm-quote {
+  display: inline;
+  width: inherit;
+}
+.editor .CodeMirror .gfm-codeblock .cm-string {
+  color: #518705;
+}
+.editor .CodeMirror .gfm-codeblock .cm-string-2 {
+  color: #518705;
+}
+.editor .CodeMirror .gfm-codeblock .cm-tag {
+  color: #069d7c;
+}
+.editor .CodeMirror .gfm-codeblock .cm-variable {
+  color: #000000;
+}
+.editor .CodeMirror .gfm-codeblock .cm-variable-2 {
+  color: #000000;
+}
+.editor .CodeMirror .gfm-codeblock .cm-property.cm-string {
+  color: #0774b4;
+}
+.editor .CodeMirror .cm-url {
+  color: #06669d;
 }
 .editor .CodeMirror-activeline-background,
 .editor .CodeMirror-activeline-gutter {
-  background-color: rgba(236, 239, 244, 0.7) !important;
+  background-color: rgba(60, 45, 0, 0.05) !important;
+}
+body[class*="dark-ui"] .editor {
+  /* All 'dem swatches */
+  /* Active Line Highlight support */
+}
+body[class*="dark-ui"] .editor .CodeMirror {
+  background-color: #30302d;
+  color: #fffeec;
+}
+body[class*="dark-ui"] .editor .CodeMirror-scroll {
+  color: #fffeec;
+}
+body[class*="dark-ui"] .editor .CodeMirror-gutters {
+  background-color: #191918;
+  border-right: 1px solid #757573;
+}
+body[class*="dark-ui"] .editor .CodeMirror-linenumber {
+  color: #757573;
+}
+body[class*="dark-ui"] .editor .CodeMirror-selected {
+  background-color: #757573;
+}
+body[class*="dark-ui"] .editor .CodeMirror-focused .CodeMirror-selected {
+  background-color: #b26217;
+}
+body[class*="dark-ui"] .editor .CodeMirror-cursor {
+  border-left: 1px solid #e00917;
+}
+body[class*="dark-ui"] .editor .CodeMirror-matchingbracket,
+body[class*="dark-ui"] .editor .CodeMirror-matchingtag {
+  background-color: #f6d82a !important;
+  color: #000000 !important;
+  border: 1px solid rgba(235, 234, 230, 0.1);
+  margin-left: -1px;
+  margin-right: -1px;
+  padding: 2px 0px;
+}
+body[class*="dark-ui"] .editor .CodeMirror-foldgutter-open:after {
+  color: #bcbbb8;
+}
+body[class*="dark-ui"] .editor .CodeMirror-foldgutter-folded:after {
+  color: #bcbbb8;
+}
+body[class*="dark-ui"] .editor .CodeMirror.over-gutter .CodeMirror-foldgutter-open:after,
+body[class*="dark-ui"] .editor .CodeMirror-activeline .CodeMirror-foldgutter-open:after {
+  color: #313130;
+}
+body[class*="dark-ui"] .editor .CodeMirror-foldmarker {
+  border-color: #bcbbb8;
+  background-color: #bcbbb8;
+  color: #a4a4a1;
+}
+body[class*="dark-ui"] .editor .CodeMirror .CodeMirror-linewidget img.inline-widget {
+  background: #d3d2cf;
+}
+body[class*="dark-ui"] .editor .CodeMirror-searching,
+body[class*="dark-ui"] .editor .cm-searching {
+  background-color: #f6d82a;
+  color: #000000;
+}
+body[class*="dark-ui"] .editor .CodeMirror-searching.searching-current-match,
+body[class*="dark-ui"] .editor .cm-searching.searching-current-match {
+  background-color: #e00917 !important;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-list.cm-variable-2 {
+  color: #a1f62a;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-list.cm-variable-3 {
+  color: #2aacf6;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-hr {
+  color: #8d8c8a;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-header {
+  color: #fffeec;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-1,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-2,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-3,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-4,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-5,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-6 {
+  opacity: 0.3;
+  color: #bcbbb8;
+  font-family: none;
+  font-size: 1rem !important;
+  display: inline-block;
+  text-align: right;
+  width: 2.5rem;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-5,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-header-6 {
+  font-size: 0.8rem !important;
+  letter-spacing: -0.1rem;
+  width: 2.5rem;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-link {
+  color: #a1f62a;
+  text-decoration: none;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-rangeinfo {
+  color: #ffa34e;
+}
+body[class*="dark-ui"] .editor .CodeMirror pre.quote {
+  text-indent: -1rem;
+  background-color: rgba(235, 234, 230, 0.1);
+  border-radius: 6px;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-quote {
+  color: #ebeae6;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-whitespace::before {
+  color: #d3d2cf;
+  opacity: 0.4;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-quote,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-strong,
+body[class*="dark-ui"] .editor .CodeMirror .cm-formatting-em {
+  opacity: 0.3;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-strong {
+  color: #ca0815;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-em {
+  color: #e57e1e;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-strikethrough {
+  color: #a4a4a1;
+  text-decoration-color: #8d8c8a;
+}
+body[class*="dark-ui"] .editor .CodeMirror .CodeMirror-code > div > pre > span::after,
+body[class*="dark-ui"] .editor .CodeMirror .CodeMirror-line > span::after {
+  color: #d3d2cf;
+  opacity: 0.4;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-inline-code {
+  background: rgba(235, 234, 230, 0.1);
+  color: #f95f6a;
+  border: 1px solid rgba(235, 234, 230, 0.1);
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-inline-code.CodeMirror-matchingbracket {
+  padding: 2px 4px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-inline-code.cm-formatting-code {
+  background: transparent;
+  color: #bcbbb8;
+  border: none;
+  padding: 0px;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-table-sep,
+body[class*="dark-ui"] .editor .CodeMirror .table-row.table-row-1 {
+  color: #79ca08;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock {
+  background-color: rgba(235, 234, 230, 0.1);
+  color: #ffffff;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock.gfm-codeblock-begin {
+  color: #8d8c8a;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock.gfm-codeblock-end {
+  color: #a4a4a1;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-atom {
+  color: #a58ee1;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-attribute {
+  color: #adf845;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-builtin {
+  color: #45b6f8;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-bracket {
+  opacity: 0.5;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-comment {
+  color: #8d8c8a;
+  font-style: italic;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-def {
+  color: #95fbe5;
+  font-weight: 700;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-error {
+  color: #e00917;
+  font-style: italic;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-header {
+  color: #45b6f8;
+  font-weight: 400;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-keyword {
+  color: #45b6f8;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-meta {
+  color: #bcbbb8;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-minus {
+  color: #f95f6a;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-number {
+  color: #f8dd45;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-operator {
+  color: #c7caf1;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-plus {
+  color: #f8dd45;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-property {
+  color: #45b6f8;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-qualifier {
+  color: #adf845;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-quote {
+  display: inline;
+  width: inherit;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-string {
+  color: #fa7a83;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-string-2 {
+  color: #ffaf64;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-tag {
+  color: #2af6ca;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-variable,
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-variable-2,
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-variable-3 {
+  color: #a58ee1;
+}
+body[class*="dark-ui"] .editor .CodeMirror .gfm-codeblock .cm-property.cm-string {
+  color: #45b6f8;
+}
+body[class*="dark-ui"] .editor .CodeMirror .cm-url {
+  color: #2aacf6;
+}
+body[class*="dark-ui"] .editor .CodeMirror-activeline-background,
+body[class*="dark-ui"] .editor .CodeMirror-activeline-gutter {
+  background-color: rgba(70, 70, 69, 0.5) !important;
 }
